@@ -1,0 +1,60 @@
+body {
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; 
+}
+
+#animation-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main-photo {
+    /* Estas dos líneas son la clave: */
+    max-width: 80vw;  /* La imagen no ocupará más del 80% del ANCHO de la ventana */
+    max-height: 80vh; /* La imagen no ocupará más del 80% del ALTO de la ventana */
+    
+    /* El resto de estilos se mantienen */
+    width: auto;      /* Mantiene la proporción de la imagen */
+    height: auto;     /* Mantiene la proporción de la imagen */
+    image-rendering: -webkit-optimize-contrast; 
+    position: relative; 
+    z-index: 2;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+#particle-canvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+#play-pause-btn {
+    position: absolute;
+    bottom: 25px;
+    z-index: 3;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 2px solid white;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#play-pause-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#play-pause-btn:active {
+    transform: scale(0.95);
+}
