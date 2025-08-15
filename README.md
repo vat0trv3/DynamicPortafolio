@@ -1,2 +1,2 @@
 # github.io
-Portafolio Dinamico 3 PAGINAS
+Portafolio Dinamico
