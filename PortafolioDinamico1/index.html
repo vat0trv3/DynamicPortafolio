@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Vatotrave - by.vaTT</title>
+    <style>
+        /* --- ESTILOS CSS --- */
+        /* Estilos generales para el cuerpo de la pÃ¡gina. */
+        body {
+            margin: 0; /* Elimina el margen por defecto del body. */
+            font-family: Arial, sans-serif; /* Define la fuente predeterminada. */
+            background-color: #000; /* Establece el fondo negro. */
+            color: #fff; /* Color de texto blanco. */
+            overflow: hidden; /* Oculta las barras de desplazamiento del navegador. */
+            display: flex; /* Usa Flexbox para centrar el contenido. */
+            justify-content: center; /* Centra el contenido horizontalmente. */
+            align-items: center; /* Centra el contenido verticalmente. */
+            min-height: 100vh; /* Asegura que el cuerpo ocupe el 100% de la altura de la ventana. */
+        }
+        /* Estilos para el canvas (el Ã¡rea de dibujo de p5.js). */
+        canvas {
+            display: block; /* Elimina cualquier espacio extra que el navegador pueda aÃ±adir. */
+        }
+        /* Estilos para el menÃº de navegaciÃ³n. */
+        nav {
+            position: absolute; /* Posiciona el menÃº de manera absoluta. */
+            top: 20px; /* Lo coloca a 20px del borde superior. */
+            right: 20px; /* Lo coloca a 20px del borde derecho. */
+            z-index: 100; /* Lo pone por encima de otros elementos. */
+        }
+        nav a {
+            color: #fff; /* Color del enlace blanco. */
+            text-decoration: none; /* Quita el subrayado. */
+            margin-left: 20px; /* AÃ±ade espacio entre los enlaces. */
+            font-size: 1.2em; /* TamaÃ±o de la fuente. */
+            text-transform: uppercase; /* Convierte el texto a mayÃºsculas. */
+            letter-spacing: 2px; /* Espaciado entre letras. */
+            opacity: 0.7; /* Opacidad inicial para un efecto sutil. */
+            transition: opacity 0.3s ease; /* Anima el cambio de opacidad. */
+        }
+        nav a:hover {
+            opacity: 1; /* Al pasar el cursor, la opacidad se vuelve 100%. */
+        }
+        /* Estilos para el botÃ³n de mÃºsica. */
+        #playButton {
+            position: absolute; /* Posiciona el botÃ³n de forma absoluta. */
+            bottom: 20px; /* Lo coloca a 20px del borde inferior. */
+            left: 50%; /* Lo centra horizontalmente. */
+            transform: translateX(-50%); /* Ajusta la posiciÃ³n para un centrado perfecto. */
+            z-index: 100; /* Lo pone encima del sketch. */
+            background: none; /* Fondo transparente. */
+            border: 1px solid rgba(255, 255, 255, 0.5); /* Borde blanco semi-transparente. */
+            color: #fff; /* Color de texto blanco. */
+            padding: 10px 20px; /* Espacio interno. */
+            font-size: 1em; /* TamaÃ±o de la fuente. */
+            cursor: pointer; /* Muestra el cursor de mano al pasar por encima. */
+            text-transform: uppercase; /* Convierte el texto a mayÃºsculas. */
+            letter-spacing: 2px; /* Espaciado entre letras. */
+            opacity: 0.7; /* Opacidad inicial. */
+            transition: opacity 0.3s ease; /* Anima el cambio de opacidad. */
+        }
+        #playButton:hover {
+            opacity: 1; /* Opacidad 100% al pasar el cursor. */
+        }
+        /* Estilos para el botÃ³n de entrada. */
+        #entryButton {
+            position: absolute; /* Posiciona el botÃ³n de forma absoluta. */
+            bottom: 120px; /* Lo coloca a 120px del borde inferior. */
+            left: 50%; /* Lo centra horizontalmente. */
+            transform: translateX(-50%); /* Ajusta la posiciÃ³n para un centrado perfecto. */
+            z-index: 100; /* Lo pone encima del sketch. */
+            background: none; /* Fondo transparente. */
+            border: 1px solid rgba(64, 224, 208, 0.8); /* Borde turquesa neÃ³n. */
+            color: rgba(64, 224, 208, 0.9); /* Color del texto turquesa neÃ³n. */
+            padding: 15px 30px; /* Espacio interno. */
+            font-size: 1.2em; /* TamaÃ±o de la fuente. */
+            text-decoration: none; /* Quita el subrayado. */
+            text-transform: uppercase; /* Convierte el texto a mayÃºsculas. */
+            letter-spacing: 3px; /* Espaciado entre letras. */
+            opacity: 0.9; /* Opacidad inicial. */
+            transition: all 0.3s ease; /* Anima todos los cambios al pasar el cursor. */
+        }
+        #entryButton:hover {
+            background-color: rgba(64, 224, 208, 0.2); /* Fondo semi-transparente al pasar el cursor. */
+            color: #fff; /* El color del texto se vuelve blanco al pasar el cursor. */
+        }
+    </style>
+</head>
+<body>
+            
+    </a>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.9/lib/p5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.9/lib/addons/p5.sound.min.js"></script>
+    <script src="js/powered.by.vatt.js"></script>
+</body>
+</html>
