@@ -1,0 +1,107 @@
+<style>
+/* === Estilos Generales del Cuerpo === */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    background-color: #0f1214;
+
+    /* Imagen de Fondo Fija */
+    background-image: url('assets/fondo1.png');
+    background-size: cover; /* Escala para cubrir la pantalla */
+    background-position: center center; /* Centrada */
+    background-repeat: no-repeat; /* No se repite */
+    background-attachment: fixed; /* Fija al hacer scroll */
+}
+
+/* === Contenedor Principal === */
+.thumbnails-container {
+    display: grid;
+    justify-content: center;
+    padding: 50px 20px;
+    min-height: 100vh;
+}
+
+/* === Tarjetas de proyecto === */
+.project-group {
+    width: 90vw;
+    max-width: 400px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: rgba(30, 30, 30, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.project-group:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
+}
+
+/* === Imágenes / videos === */
+.video-thumbnail {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* === Contenedor de botones dentro de la tarjeta === */
+.project-buttons {
+    padding: 10px;
+}
+
+/* === Botones de tarjeta === */
+.soundcloud-button,
+.gemini-prompt-button,
+.manual-animation-button,
+.tiktok-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-family: sans-serif;
+    font-weight: bold;
+    transition: transform 0.2s;
+    margin-top: 8px;
+}
+.project-buttons a:first-child {
+    margin-top: 0;
+}
+.soundcloud-button:hover,
+.gemini-prompt-button:hover,
+.manual-animation-button:hover,
+.tiktok-button:hover {
+    transform: scale(1.03);
+}
+
+/* === Colores botones === */
+.soundcloud-button { background-color: #ff5500; }
+.gemini-prompt-button { background-color: #3b82f6; }
+.manual-animation-button { background-color: #6c4af5; }
+.tiktok-button { background-color: #222222; border: 2px solid #1a1a1a; }
+
+/* === Botones sociales generales === */
+.social-button {
+    display: block;
+    width: 90vw;
+    max-width: 400px;
+    margin-bottom: 20px;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-family: sans-serif;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+.social-button:hover {
+    transform: scale(1.03);
+}
+.soundcloud-general { background-color: #ff5500; }
+.tiktok-general { background-color: #222222; border: 2px solid #1a1a1a; }
+</style>
