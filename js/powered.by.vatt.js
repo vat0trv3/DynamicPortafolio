@@ -1,6 +1,3 @@
-// ===========================================
-// 1. VARIABLES GLOBALES
-// ===========================================
 let lastMouseX = -1;
 let lastMouseY = -1;
 let mySound;
