@@ -9,7 +9,10 @@ let myVideo;
 let headlineText = "VaTOTRVE";
 let subheadlineText = "poweredbyvatt";
 let textSizeMain, textSizeSub, textSizeCorner, textSizeSmall;
-
+let fadingOut = false; // ¿Estamos haciendo fade out?
+let alphaFade = 0;     
+let fadeSpeed = 5;     // Qué tan rápido se hace el fade
+let targetURL = "";
 // --- BOTÓN DE AUDIO ---
 let audioButtonX;
 let audioButtonY;
@@ -183,7 +186,12 @@ function draw() {
         drawInterconnectingLines();
     }
     
-    drawTextElements();
+    drawTextElements();textAlign(CENTER, CENTER);
+    textSize(10); // pequeño y discreto
+    fill(255, 0, 255, 180); // algo translúcido
+    noStroke();
+    let buttonText = isAudioPlaying ? "STOP" : "PLAY";
+    text(buttonText, audioButtonX, audioButtonY);
     
     if (mouseIsMoving) {
         drawInteractiveShapes();
@@ -195,6 +203,7 @@ function draw() {
     lastMouseX = mouseX;
     lastMouseY = mouseY;
 }
+
 
 
 // ============================================
@@ -234,6 +243,7 @@ function handleInteraction() {
     let dGoIn = dist(mouseX, mouseY, goInButtonX, goInButtonY);
     if (dGoIn < goInButtonSize / 2) {
         window.location.href = 'https://editor.p5js.org/vat0trv3/full/A4YiVnT2h';
+      fadingOut = true;
     }
 }
 
